@@ -1,0 +1,18 @@
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+  application:
+    name: rest-with-spring-boot
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/rest_spring_boot_udemy?userTimezone=true&serverTimezone=UTC
+    username: root
+    password: 123456
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+      properties:
+        hibernate:
+      show-sql: false
